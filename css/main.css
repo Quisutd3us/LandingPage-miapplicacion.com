@@ -1,22 +1,60 @@
+body {
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 16px; }
 
+ul li {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+@media (min-width: 576px) {
+  #mainContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 719px;
+    background: url("/img/mainHeader.png") no-repeat center center; }
+    #mainContent #headerPrincipal {
+      margin-top: -10rem; }
+      #mainContent #headerPrincipal h1 {
+        font-family: 'Nunito', sans-serif;
+        font-weight: 400;
+        font-size: 3.5rem;
+        color: 0.8rem;
+        letter-spacing: 0.5rem;
+        line-height: 2.8rem;
+        color: whitesmoke; }
+      #mainContent #headerPrincipal p {
+        font-family: 'Nunito', sans-serif;
+        font-size: 1rem;
+        font-weight: lighter;
+        color: 0.5rem;
+        letter-spacing: 0rem;
+        line-height: 1.5rem;
+        color: whitesmoke; }
+      #mainContent #headerPrincipal button {
+        background-color: whitesmoke;
+        border: solid 1px white;
+        color: #333333; }
 
+  #seccionComoTrabaja article .col-12 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; }
+  #seccionComoTrabaja h2 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #333333; }
+  #seccionComoTrabaja p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    font-weight: lighter;
+    color: 10rem;
+    letter-spacing: 0rem;
+    line-height: 1.5rem; } }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*# sourceMappingURL=main.css.map */
