@@ -20,7 +20,7 @@ ul li {
     flex-direction: column;
     justify-content: flex-start;
     height: 719px;
-    background: url("/img/mainHeader.png") no-repeat center center;
+    background: url("../img/mainHeader.png") no-repeat center center;
     background-size: cover; }
     #mainContent #headerPrincipal {
       margin-top: 0rem; }
@@ -63,7 +63,7 @@ ul li {
     line-height: 1.5rem; }
 
   #seccionNosotros {
-    background: url("/img/imgNosotros.png") no-repeat top center;
+    background: url("../img/imgNosotros.png") no-repeat top center;
     background-size: container; }
     #seccionNosotros h2 {
       font-family: 'Nunito', sans-serif;
@@ -88,7 +88,7 @@ ul li {
       color: whitesmoke; }
 
   #seccionCaracteristicas {
-    background: url("/img/imgCaracteristicas.png") no-repeat top center;
+    background: url("../img/imgCaracteristicas.png") no-repeat top center;
     background-size: container; }
     #seccionCaracteristicas h2 {
       font-family: 'Nunito', sans-serif;
@@ -277,7 +277,7 @@ ul li {
         line-height: 1.5rem; }
 
   #seccionPreguntas {
-    background: url("/img/imgCaracteristicas.png") no-repeat center center;
+    background: url("../img/imgCaracteristicas.png") no-repeat center center;
     background-size: cover; }
     #seccionPreguntas article:nth-child(1) h2 {
       font-family: 'Nunito', sans-serif;
@@ -325,7 +325,7 @@ ul li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url("/img/imgNewsletter.png") no-repeat center left;
+    background: url("../img/imgNewsletter.png") no-repeat center left;
     background-size: cover;
     height: 100vh; }
     #seccionNewsLetter h2 {

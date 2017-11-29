@@ -74,7 +74,7 @@ ul li {
         flex-direction: column;
         justify-content: flex-start;
         height: 719px;
-        background: url("/img/mainHeader.png") no-repeat center center;
+        background: url("../img/mainHeader.png") no-repeat center center;
         background-size: cover;
         #headerPrincipal {
             margin-top: 0rem; // @include helper(red);
@@ -110,7 +110,7 @@ ul li {
     } // terminando estilos Trabaja
     #seccionNosotros {
         // @include helper(red);
-        background: url("/img/imgNosotros.png") no-repeat top center;
+        background: url("../img/imgNosotros.png") no-repeat top center;
         background-size: container;
         h2 {
             @include h2xs();
@@ -129,7 +129,7 @@ ul li {
     } // terminando estilos Nosotros
     #seccionCaracteristicas {
         // @include helper(red);
-        background: url("/img/imgCaracteristicas.png") no-repeat top center;
+        background: url("../img/imgCaracteristicas.png") no-repeat top center;
         background-size: container;
         h2 {
             @include h2xs();
@@ -319,7 +319,7 @@ ul li {
         }
     } // terminando estilos Empleados
     #seccionPreguntas {
-        background: url("/img/imgCaracteristicas.png") no-repeat center center;
+        background: url("../img/imgCaracteristicas.png") no-repeat center center;
         background-size: cover;
         article:nth-child(1) {
             // @include helper(green);
@@ -365,7 +365,7 @@ ul li {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background: url("/img/imgNewsletter.png") no-repeat center left;
+        background: url("../img/imgNewsletter.png") no-repeat center left;
         background-size: cover;
         height: 100vh;
         h2 {
