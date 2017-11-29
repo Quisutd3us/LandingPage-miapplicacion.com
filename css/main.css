@@ -9,21 +9,26 @@ ul li {
   margin: 0;
   padding: 0; }
 
-@media (min-width: 576px) {
+#decoracion {
+  margin: 1rem auto;
+  width: 20%;
+  border: solid 2px #5ccaf4; }
+
+@media (min-width: 320px) {
   #mainContent {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-start;
     height: 719px;
-    background: url("/img/mainHeader.png") no-repeat center center; }
+    background: url("/img/mainHeader.png") no-repeat center center;
+    background-size: cover; }
     #mainContent #headerPrincipal {
-      margin-top: -10rem; }
+      margin-top: 0rem; }
       #mainContent #headerPrincipal h1 {
         font-family: 'Nunito', sans-serif;
         font-weight: 400;
-        font-size: 3.5rem;
-        color: 0.8rem;
-        letter-spacing: 0.5rem;
+        font-size: 2rem;
+        letter-spacing: 0.2rem;
         line-height: 2.8rem;
         color: whitesmoke; }
       #mainContent #headerPrincipal p {
@@ -53,8 +58,323 @@ ul li {
     font-family: 'Nunito', sans-serif;
     font-size: 1rem;
     font-weight: lighter;
-    color: 10rem;
+    color: 0.5rem;
     letter-spacing: 0rem;
-    line-height: 1.5rem; } }
+    line-height: 1.5rem; }
+
+  #seccionNosotros {
+    background: url("/img/imgNosotros.png") no-repeat top center;
+    background-size: container; }
+    #seccionNosotros h2 {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 700;
+      font-size: 2rem;
+      color: #333333; }
+    #seccionNosotros p {
+      font-family: 'Nunito', sans-serif;
+      font-size: 1rem;
+      font-weight: lighter;
+      color: 0.5rem;
+      letter-spacing: 0rem;
+      line-height: 1.5rem; }
+    #seccionNosotros h4 {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 700;
+      font-size: 0.875rem;
+      line-height: 1.375rem; }
+    #seccionNosotros button {
+      background-color: #4ac4f3;
+      border: solid 1px #5ccaf4;
+      color: whitesmoke; }
+
+  #seccionCaracteristicas {
+    background: url("/img/imgCaracteristicas.png") no-repeat top center;
+    background-size: container; }
+    #seccionCaracteristicas h2 {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 700;
+      font-size: 2rem;
+      color: #333333; }
+    #seccionCaracteristicas p {
+      font-family: 'Nunito', sans-serif;
+      font-size: 1rem;
+      font-weight: lighter;
+      color: 0.5rem;
+      letter-spacing: 0rem;
+      line-height: 1.5rem; }
+    #seccionCaracteristicas ul li {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 700;
+      font-size: 0.875rem;
+      line-height: 1.375rem; }
+      #seccionCaracteristicas ul li i {
+        color: #5ccaf4; }
+
+  #seccionEspecialidades #EspecialidadesFila1 div,
+  #seccionEspecialidades #EspecialidadesFila2 div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; }
+    #seccionEspecialidades #EspecialidadesFila1 div .card,
+    #seccionEspecialidades #EspecialidadesFila2 div .card {
+      margin: 1rem 0rem; }
+
+  #seccionClientes {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#5ccaf4+0,2989d8+27,207cca+82,4ac4f3+100 */
+    background: #5ccaf4;
+    /* Old browsers */
+    background: -moz-linear-gradient(45deg, #5ccaf4 0%, #2989d8 27%, #207cca 82%, #4ac4f3 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #5ccaf4 0%, #2989d8 27%, #207cca 82%, #4ac4f3 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, #5ccaf4 0%, #2989d8 27%, #207cca 82%, #4ac4f3 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5ccaf4', endColorstr='#4ac4f3', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */ }
+    #seccionClientes #seccionClientesPrincipal .estadisticas {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center; }
+      #seccionClientes #seccionClientesPrincipal .estadisticas i {
+        color: whitesmoke; }
+      #seccionClientes #seccionClientesPrincipal .estadisticas h4 {
+        font-family: 'Nunito', sans-serif;
+        font-weight: 700;
+        font-size: 0.875rem;
+        line-height: 1.375rem;
+        color: whitesmoke; }
+      #seccionClientes #seccionClientesPrincipal .estadisticas p {
+        font-family: 'Nunito', sans-serif;
+        font-size: 1rem;
+        font-weight: lighter;
+        color: 0.5rem;
+        letter-spacing: 0rem;
+        line-height: 1.5rem;
+        font-size: 3rem;
+        color: whitesmoke; }
+    #seccionClientes #seccionClientesSecundario div {
+      text-align: center; }
+      #seccionClientes #seccionClientesSecundario div p {
+        font-family: 'Nunito', sans-serif;
+        font-size: 1rem;
+        font-weight: lighter;
+        color: 0.5rem;
+        letter-spacing: 0rem;
+        line-height: 1.5rem;
+        color: whitesmoke; }
+      #seccionClientes #seccionClientesSecundario div button {
+        background-color: whitesmoke;
+        border: solid 1px white;
+        color: #333333; }
+    #seccionClientes #seccionClientesTestimonios h2 {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 700;
+      font-size: 2rem;
+      color: #333333;
+      color: whitesmoke; }
+    #seccionClientes #seccionClientesTestimonios div:nth-child(1) p {
+      font-family: 'Nunito', sans-serif;
+      font-size: 1rem;
+      font-weight: lighter;
+      color: 0.5rem;
+      letter-spacing: 0rem;
+      line-height: 1.5rem;
+      color: whitesmoke; }
+    #seccionClientes #seccionClientesTestimonios img {
+      margin-top: 3rem;
+      width: 10rem;
+      border: solid 0.5rem #4ac4f3;
+      border-radius: 50%;
+      z-index: 2; }
+    #seccionClientes #seccionClientesTestimonios .row div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center; }
+      #seccionClientes #seccionClientesTestimonios .row div .card {
+        border-bottom: solid 0.5rem #5ccaf4;
+        margin-top: -1rem;
+        z-index: 1; }
+      #seccionClientes #seccionClientesTestimonios .row div h4 {
+        font-family: 'Nunito', sans-serif;
+        font-weight: 700;
+        font-size: 2rem;
+        color: #333333;
+        color: #5ccaf4; }
+      #seccionClientes #seccionClientesTestimonios .row div p {
+        font-family: 'Nunito', sans-serif;
+        font-size: 1rem;
+        font-weight: lighter;
+        color: 0.5rem;
+        letter-spacing: 0rem;
+        line-height: 1.5rem;
+        color: #333333; }
+
+  #seccionPrecios article:nth-child(1) h2 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #333333; }
+  #seccionPrecios article:nth-child(1) p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    font-weight: lighter;
+    color: 0.5rem;
+    letter-spacing: 0rem;
+    line-height: 1.5rem; }
+  #seccionPrecios article:nth-child(2) div {
+    margin: 1rem 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; }
+    #seccionPrecios article:nth-child(2) div .card .precios {
+      margin-top: -8rem;
+      color: whitesmoke; }
+      #seccionPrecios article:nth-child(2) div .card .precios h2 {
+        font-size: 3rem; }
+        #seccionPrecios article:nth-child(2) div .card .precios h2 sup {
+          font-size: 1rem; }
+    #seccionPrecios article:nth-child(2) div .card button {
+      background-color: #4ac4f3;
+      border: solid 1px #5ccaf4;
+      color: whitesmoke;
+      margin: 1rem 0rem; }
+
+  #seccionEmpleados {
+    background-color: #f4f4f4; }
+    #seccionEmpleados article:nth-child(1) h2 {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 700;
+      font-size: 2rem;
+      color: #333333; }
+    #seccionEmpleados article:nth-child(1) p {
+      font-family: 'Nunito', sans-serif;
+      font-size: 1rem;
+      font-weight: lighter;
+      color: 0.5rem;
+      letter-spacing: 0rem;
+      line-height: 1.5rem; }
+    #seccionEmpleados article:nth-child(2) div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      margin: 1rem 0rem; }
+      #seccionEmpleados article:nth-child(2) div .card h4 {
+        font-family: 'Nunito', sans-serif;
+        font-weight: 700;
+        font-size: 0.875rem;
+        line-height: 1.375rem; }
+      #seccionEmpleados article:nth-child(2) div .card p {
+        font-family: 'Nunito', sans-serif;
+        font-size: 1rem;
+        font-weight: lighter;
+        color: 0.5rem;
+        letter-spacing: 0rem;
+        line-height: 1.5rem; }
+
+  #seccionPreguntas {
+    background: url("/img/imgCaracteristicas.png") no-repeat center center;
+    background-size: cover; }
+    #seccionPreguntas article:nth-child(1) h2 {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 700;
+      font-size: 2rem;
+      color: #333333; }
+    #seccionPreguntas article:nth-child(1) p {
+      font-family: 'Nunito', sans-serif;
+      font-size: 1rem;
+      font-weight: lighter;
+      color: 0.5rem;
+      letter-spacing: 0rem;
+      line-height: 1.5rem; }
+    #seccionPreguntas article:nth-child(2) #accordion .card {
+      margin: 1rem 0rem; }
+      #seccionPreguntas article:nth-child(2) #accordion .card #headingOne,
+      #seccionPreguntas article:nth-child(2) #accordion .card #headingTwo,
+      #seccionPreguntas article:nth-child(2) #accordion .card #headingThree {
+        background-color: #4ac4f3;
+        border: none; }
+        #seccionPreguntas article:nth-child(2) #accordion .card #headingOne h5,
+        #seccionPreguntas article:nth-child(2) #accordion .card #headingTwo h5,
+        #seccionPreguntas article:nth-child(2) #accordion .card #headingThree h5 {
+          font-family: 'Nunito', sans-serif;
+          font-weight: 700;
+          font-size: 0.875rem;
+          line-height: 1.375rem;
+          text-align: right; }
+          #seccionPreguntas article:nth-child(2) #accordion .card #headingOne h5 a,
+          #seccionPreguntas article:nth-child(2) #accordion .card #headingTwo h5 a,
+          #seccionPreguntas article:nth-child(2) #accordion .card #headingThree h5 a {
+            color: #333333; }
+      #seccionPreguntas article:nth-child(2) #accordion .card collapseOne .card-body,
+      #seccionPreguntas article:nth-child(2) #accordion .card collapseTwo .card-body,
+      #seccionPreguntas article:nth-child(2) #accordion .card collapseThree .card-body {
+        font-family: 'Nunito', sans-serif;
+        font-size: 1rem;
+        font-weight: lighter;
+        color: 0.5rem;
+        letter-spacing: 0rem;
+        line-height: 1.5rem; }
+
+  #seccionNewsLetter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("/img/imgNewsletter.png") no-repeat center left;
+    background-size: cover;
+    height: 100vh; }
+    #seccionNewsLetter h2 {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 700;
+      font-size: 2rem;
+      color: #333333;
+      background-color: rgba(255, 255, 255, 0.63);
+      padding: 1rem 2rem; }
+    #seccionNewsLetter form {
+      display: flex;
+      justify-content: center; }
+      #seccionNewsLetter form button {
+        background-color: whitesmoke;
+        border: solid 1px white;
+        color: #333333; }
+    #seccionNewsLetter small#emailHelp {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 700;
+      font-size: 0.875rem;
+      line-height: 1.375rem;
+      color: whitesmoke; }
+
+  footer .row div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    footer .row div i {
+      padding: 1rem;
+      margin: 1rem 0rem;
+      border-radius: 50%;
+      color: #5ccaf4;
+      background-color: #f4f4f4; }
+    footer .row div h4 {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 700;
+      font-size: 2rem;
+      color: #333333; }
+    footer .row div p {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 700;
+      font-size: 0.875rem;
+      line-height: 1.375rem; }
+  footer .row #redesSociales ul {
+    width: 80%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around; } }
 
 /*# sourceMappingURL=main.css.map */
