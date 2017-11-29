@@ -375,6 +375,42 @@ ul li {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: space-around; } }
+    justify-content: space-around;
+    align-items: flex-start; } }
+@media (min-width: 768px) {
+  #mainContent #menuPrincipal ul li {
+    text-align: center; }
+  #mainContent #headerPrincipal h1 {
+    font-size: 3rem; }
+  #mainContent #headerPrincipal p {
+    font-size: 1.2rem; }
+  #mainContent #headerPrincipal button {
+    padding: 1rem 0.8rem;
+    margin-top: 3rem; }
+
+  #seccionNosotros .row button {
+    padding: 1rem 0.8rem;
+    margin-top: 3rem; }
+
+  #seccionClientes #seccionClientesSecundario button {
+    padding: 1rem 0.8rem;
+    margin-top: 3rem; } }
+@media (min-width: 992px) {
+  footer .row div {
+    display: flex;
+    justify-content: space-between; }
+  footer .row #redesSociales {
+    display: flex;
+    justify-content: center; } }
+@media (min-width: 1200px) {
+  #mainContent #headerPrincipal h1 {
+    font-size: 5rem;
+    letter-spacing: 0.2rem;
+    line-height: 5rem; }
+  #mainContent #headerPrincipal p {
+    font-size: 1.2rem; }
+  #mainContent #headerPrincipal button {
+    padding: 1rem 0.8rem;
+    margin-top: 3rem; } }
 
 /*# sourceMappingURL=main.css.map */
