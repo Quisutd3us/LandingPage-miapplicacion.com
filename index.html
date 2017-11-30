@@ -35,7 +35,7 @@
     <!-- Nav -->
     <nav id="menuPrincipal" class="navbar  navbar-light bg-light">
       <a class="navbar-brand" href="#">
-        <img src="/Varios/logo.svg" width="30" height="30" class="d-inline-block align-top" alt=""> SOFTBOX
+        <img src="./Varios/logo.svg" width="30" height="30" class="d-inline-block align-top" alt=""> SOFTBOX
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
         aria-expanded="false" aria-label="Toggle navigation">
@@ -667,32 +667,35 @@
         <div class="col-11 offset-col-1 col-md-4 offset-md-6 offset-lg-8 ">
           <h4 class="my-5 text-center">Permanece en Contacto</h4>
           <div id="decoracion"></div>
-          <form class="my-5">
-            <div class="form-group ">
-              <input type="text" class="form-control " id="nombre " aria-describedby="nombreAyuda " placeholder="*Nombre y Apellido" required
-                minlength="3" maxlength="50">
-            </div>
-            <div class="form-group ">
-              <input type="email" pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*$"
-                class="form-control " id="exampleInputEmail1" aria-describedby="emailHelp
-                    " placeholder="*Email " required>
-              <small id="emailHelp " class="form-text text-muted ">No compartimos sus datos con terceros.</small>
+
+          <!-- inicia Formulario -->
+          <form class="my-5" id="formulario">
+            <div class="form-group">
+              <input type="text" class="form-control" name="nombre" id="nombre" aria-describedby="nombreAyuda" placeholder="*Nombre y Apellido"
+                required>
             </div>
             <div class="form-group">
-              <label for="exampleFormControlSelect1">Preferencias</label>
-              <select class="form-control" id="exampleFormControlSelect1">
+              <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp
+                    " placeholder="tuemail@ejemplo.com" required>
+              <small id="emailHelp" class="form-text text-muted ">No compartimos sus datos con terceros.</small>
+            </div>
+            <div class="form-group">
+              <label for="gustos">Preferencias</label>
+              <select class="form-control" name="gustos" id="gustos" required>
                 <option>Arte</option>
                 <option>Cine</option>
                 <option>Musica</option>
               </select>
             </div>
-            <div class="form-group ">
-              <input type="number" step="any" class="form-control" id="telefono " aria-describedby="telefonoAyuda " placeholder="Telefono"
+            <div class="form-group">
+              <input type="number" step="10" class="form-control" name="telefono" id="telefono" aria-describedby="telefonoAyuda " placeholder="Telefono"
                 minlength="5" maxlength="12" pattern="[-+]?[0-9]*[.,]?[0-9]+">
             </div>
-            <div class="form-group ">
-              <textarea class="form-control " id="comentario " rows="3 " placeholder="Ingrese su Direccion" minlength="10" maxlength="120"></textarea>
+            <div class="form-group">
+<textarea class="form-control" name="comentario" id="comentario" rows="3" placeholder="Ingrese su Direccion" minlength="10"
+  maxlength="120"></textarea>
             </div>
+            <button type="submit" class="btn btn-info">Enviar</button>
           </form>
         </div>
       </article>
@@ -754,15 +757,20 @@
   <!-- Finalizando seccion Caracteristicas id="seccionFooter " -->
 
   <!-- Mis Scripts -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN "
-    crossorigin="anonymous "></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN "
+    crossorigin="anonymous "></script> -->
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js " integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh "
     crossorigin="anonymous "></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js " integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ "
     crossorigin="anonymous "></script>
   <script src="js/vendor/smooth-scroll.js "></script>
   <script src="js/vendor/waypoint.js "></script>
-  <script src="js/main.js "></script>
+
+  <!-- mis scripts -->
+  <script src="js/main.js"></script>
 
 
 </body>
