@@ -1,4 +1,3 @@
-
 $('#formulario').submit(function (event) {
     event.preventDefault();
     enviar();
@@ -8,26 +7,26 @@ function enviar() {
     var datos = $('#formulario').serialize(); //Toma los datos name y los lleva a un arreglo
     $.ajax({
         type: "post",
-        url: "formulario.php",
+        url: "php/formulario.php",
         data: datos,
         success: function (texto) {
-            if (texto == 'exito') {
-                correcto();
+            if (texto == 1) {
+                bien();
             } else {
-                phperror(texto);
+                mal(texto);
             }
         }
     })
+}
 
-    function correcto() {
-        console.log('entro mtf');
-        $('#mensajeExitoso').removeClass('d-none');
-        $('#mensajeError').addClass('d-none');
-    }
+function bien() {
+    $('#msgExitoso').removeClass('d-none');
+    $('#msgError').addClass('d-none');
 
-    function phperror(texto) {
-        $('#mensajeError').removeClass('d-none');
-        $('#mensajeError').html(texto);
+}
 
-    }
+function mal(texto) {
+    $('#msgError').removeClass('d-none');
+    $('#msgError').html(texto);
+
 }

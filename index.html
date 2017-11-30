@@ -669,18 +669,18 @@
           <div id="decoracion"></div>
 
           <!-- inicia Formulario -->
-          <form class="my-5" id="formulario" novalidate>
-            <div class="alert alert-success d-none" id="mensajeExitoso">Su Email a sido enviado exitosamente, En breve responderemos ...</div>
-            <div class="alert alert-danger d-none" id="mensajeError"></div>
+          <form class="my-5" id="formulario">
+            <div class="alert alert-success d-none" id="msgExitoso">Su Email a sido enviado exitosamente, En breve responderemos ...</div>
+            <div class="alert alert-danger d-none" id="msgError"></div>
             <div class="form-group">
-              <input type="text" class="form-control" name="nombre" id="nombre" aria-describedby="nombreAyuda" placeholder="*Nombre y Apellido"
-                required>
+              <input type="text" class="form-control" name="nombre" id="nombre" aria-describedby="nombreAyuda" required>
             </div>
             <div class="form-group">
               <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp
                     " placeholder="tuemail@ejemplo.com" required>
               <small id="emailHelp" class="form-text text-muted ">No compartimos sus datos con terceros.</small>
             </div>
+            <!--
             <div class="form-group">
               <label for="gustos">Preferencias</label>
               <select class="form-control" name="gustos" id="gustos" required>
@@ -693,9 +693,10 @@
               <input type="number" step="any" class="form-control" name="telefono" id="telefono" aria-describedby="telefonoAyuda " placeholder="Telefono"
                 minlength="5" maxlength="12" pattern="[-+]?[0-9]*[.,]?[0-9]+">
             </div>
+             -->
             <div class="form-group">
-<textarea class="form-control" name="comentario" id="comentario" rows="3" placeholder="Ingrese su Direccion" minlength="10"
-  maxlength="120"></textarea>
+              <textarea class="form-control" name="comentario" id="comentario" rows="3" placeholder="Ingrese su Direccion" minlength="10"
+                maxlength="120"></textarea>
             </div>
             <button type="submit" class="btn btn-info">Enviar</button>
           </form>
@@ -772,7 +773,7 @@
   <script src="js/vendor/waypoint.js "></script>
 
   <!-- mis scripts -->
-  <script src="js/main.js"></script>
+  <!-- <script src="js/main.js"></script> -->
   <script src="js/formulario.js"></script>
 
 
