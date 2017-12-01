@@ -1,14 +1,21 @@
+/*!
+ * smooth-scroll v12.1.5: Animate scrolling to anchor links
+ * (c) 2017 Chris Ferdinandi
+ * MIT License
+ * http://github.com/cferdinandi/smooth-scroll
+ */
+
 (function (root, factory) {
 	if ( typeof define === 'function' && define.amd ) {
-		define([], function () {
+		define([], (function () {
 			return factory(root);
-		});
+		}));
 	} else if ( typeof exports === 'object' ) {
 		module.exports = factory(root);
 	} else {
 		root.SmoothScroll = factory(root);
 	}
-})(typeof global !== 'undefined' ? global : typeof window !== 'undefined' ? window : this, function (window) {
+})(typeof global !== 'undefined' ? global : typeof window !== 'undefined' ? window : this, (function (window) {
 
 	'use strict';
 
@@ -486,10 +493,10 @@
 		 */
 		var resizeThrottler = function (event) {
 			if (!eventTimeout) {
-				eventTimeout = setTimeout(function() {
+				eventTimeout = setTimeout((function() {
 					eventTimeout = null; // Reset timeout
 					headerHeight = getHeaderHeight(fixedHeader); // Get the height of a fixed header if one exists
-				}, 66);
+				}), 66);
 			}
 		};
 
@@ -566,4 +573,4 @@
 
 	return SmoothScroll;
 
-});
+}));

@@ -14,41 +14,62 @@ ul li {
   width: 20%;
   border: solid 2px #5ccaf4; }
 
+.card {
+  -webkit-box-shadow: 0px 10px 29px 0px rgba(60, 60, 60, 0.33);
+  box-shadow: 0px 10px 29px 0px rgba(60, 60, 60, 0.33); }
+
 @media (min-width: 320px) {
+  #menuPrincipal {
+    z-index: 2; }
+
   #mainContent {
+    z-index: -1;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    height: 719px;
-    background: url("../img/mainHeader.png") no-repeat center center;
-    background-size: cover; }
-    #mainContent #headerPrincipal {
-      margin-top: 0rem; }
-      #mainContent #headerPrincipal h1 {
-        font-family: 'Nunito', sans-serif;
-        font-weight: 400;
-        font-size: 2rem;
-        letter-spacing: 0.2rem;
-        line-height: 2.8rem;
-        color: whitesmoke; }
-      #mainContent #headerPrincipal p {
-        font-family: 'Nunito', sans-serif;
-        font-size: 1rem;
-        font-weight: lighter;
-        color: 0.5rem;
-        letter-spacing: 0rem;
-        line-height: 1.5rem;
-        color: whitesmoke; }
-      #mainContent #headerPrincipal button {
-        background-color: whitesmoke;
-        border: solid 1px white;
-        color: #333333; }
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    background: url("../img/mainHeader.png") no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh; }
+    #mainContent #headerPrincipal h1 {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 400;
+      font-size: 2rem;
+      letter-spacing: 0.2rem;
+      line-height: 2.8rem;
+      color: whitesmoke; }
+    #mainContent #headerPrincipal p {
+      font-family: 'Nunito', sans-serif;
+      font-size: 1rem;
+      font-weight: lighter;
+      color: 0.5rem;
+      letter-spacing: 0rem;
+      line-height: 1.5rem;
+      color: whitesmoke; }
+    #mainContent #headerPrincipal button {
+      background-color: whitesmoke;
+      border: solid 1px white;
+      color: #333333; }
 
   #seccionComoTrabaja article .col-12 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center; }
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
   #seccionComoTrabaja h2 {
     font-family: 'Nunito', sans-serif;
     font-weight: 700;
@@ -112,10 +133,18 @@ ul li {
 
   #seccionEspecialidades #EspecialidadesFila1 div,
   #seccionEspecialidades #EspecialidadesFila2 div {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center; }
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
     #seccionEspecialidades #EspecialidadesFila1 div .card,
     #seccionEspecialidades #EspecialidadesFila2 div .card {
       margin: 1rem 0rem; }
@@ -124,19 +153,26 @@ ul li {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#5ccaf4+0,2989d8+27,207cca+82,4ac4f3+100 */
     background: #5ccaf4;
     /* Old browsers */
-    background: -moz-linear-gradient(45deg, #5ccaf4 0%, #2989d8 27%, #207cca 82%, #4ac4f3 100%);
     /* FF3.6-15 */
-    background: -webkit-linear-gradient(45deg, #5ccaf4 0%, #2989d8 27%, #207cca 82%, #4ac4f3 100%);
     /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(45deg, #5ccaf4 0%, #2989d8 27%, #207cca 82%, #4ac4f3 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5ccaf4', endColorstr='#4ac4f3', GradientType=1);
     /* IE6-9 fallback on horizontal gradient */ }
     #seccionClientes #seccionClientesPrincipal .estadisticas {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center; }
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
       #seccionClientes #seccionClientesPrincipal .estadisticas i {
         color: whitesmoke; }
       #seccionClientes #seccionClientesPrincipal .estadisticas h4 {
@@ -189,10 +225,18 @@ ul li {
       border-radius: 50%;
       z-index: 2; }
     #seccionClientes #seccionClientesTestimonios .row div {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center; }
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
       #seccionClientes #seccionClientesTestimonios .row div .card {
         border-bottom: solid 0.5rem #5ccaf4;
         margin-top: -1rem;
@@ -226,10 +270,18 @@ ul li {
     line-height: 1.5rem; }
   #seccionPrecios article:nth-child(2) div {
     margin: 1rem 0rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center; }
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
     #seccionPrecios article:nth-child(2) div .card .precios {
       margin-top: -8rem;
       color: whitesmoke; }
@@ -244,7 +296,8 @@ ul li {
       margin: 1rem 0rem; }
 
   #seccionEmpleados {
-    background-color: #f4f4f4; }
+    background-color: #f4f4f4;
+    background-attachment: fixed !important; }
     #seccionEmpleados article:nth-child(1) h2 {
       font-family: 'Nunito', sans-serif;
       font-weight: 700;
@@ -258,10 +311,18 @@ ul li {
       letter-spacing: 0rem;
       line-height: 1.5rem; }
     #seccionEmpleados article:nth-child(2) div {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
       margin: 1rem 0rem; }
       #seccionEmpleados article:nth-child(2) div .card h4 {
         font-family: 'Nunito', sans-serif;
@@ -277,7 +338,7 @@ ul li {
         line-height: 1.5rem; }
 
   #seccionPreguntas {
-    background: url("../img/imgCaracteristicas.png") no-repeat center center;
+    background: url("../img/imgCaracteristicas.png") no-repeat center center fixed;
     background-size: cover; }
     #seccionPreguntas article:nth-child(1) h2 {
       font-family: 'Nunito', sans-serif;
@@ -321,11 +382,20 @@ ul li {
         line-height: 1.5rem; }
 
   #seccionNewsLetter {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: url("../img/imgNewsletter.png") no-repeat center left;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: url("../img/imgNewsletter.png") no-repeat center left fixed;
     background-size: cover;
     height: 100vh; }
     #seccionNewsLetter h2 {
@@ -336,8 +406,12 @@ ul li {
       background-color: rgba(255, 255, 255, 0.63);
       padding: 1rem 2rem; }
     #seccionNewsLetter form {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      justify-content: center; }
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
       #seccionNewsLetter form button {
         background-color: whitesmoke;
         border: solid 1px white;
@@ -350,10 +424,19 @@ ul li {
       color: whitesmoke; }
 
   footer .row div {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
     footer .row div i {
       padding: 1rem;
       margin: 1rem 0rem;
@@ -374,9 +457,14 @@ ul li {
     width: 80%;
     margin: 0;
     padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
-    align-items: flex-start; } }
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; } }
 @media (min-width: 768px) {
   #mainContent #menuPrincipal ul li {
     text-align: center; }
@@ -397,11 +485,19 @@ ul li {
     margin-top: 3rem; } }
 @media (min-width: 992px) {
   footer .row div {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between; }
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
   footer .row #redesSociales {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center; } }
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; } }
 @media (min-width: 1200px) {
   #mainContent #headerPrincipal h1 {
     font-size: 5rem;

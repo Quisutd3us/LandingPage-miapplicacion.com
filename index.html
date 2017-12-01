@@ -13,85 +13,89 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Importando fuentes -->
+  <!-- Importando fuentes Google fonts -->
   <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700,900" rel="stylesheet">
 
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-
+  <!-- cargando bootstrap -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
     crossorigin="anonymous">
-  <link rel="stylesheet" href="css/animate.css">
+  <!-- cargando iconos -->
   <link rel="stylesheet" href="css/font-awesome.css">
+  <!-- cargando animate -->
+  <link rel="stylesheet" href="css/animate.css">
+
 
   <!-- Mis Estilos -->
   <link rel="stylesheet" href="css/main.css">
+  
+
   <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
 
 <body>
+  <!-- Nav -->
+  <nav id="menuPrincipal" class="navbar navbar-light bg-light justify-content-center">
+    <a class="navbar-brand" href="#">
+      <img src="./Varios/logo.svg" width="30" height="30" class="d-inline-block align-top" alt=""> SOFTBOX
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto text-center ">
+        <li class="nav-item active">
+          <a class="nav-link" href="#mainContent">Home
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-scroll href="#seccionComoTrabaja">Como Funciona</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"  data-scroll  href="#seccionNosotros">Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " data-scroll  href="#seccionCaracteristicas">Caracteristicas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " data-scroll  href="#seccionEspecialidades">Especialidades</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " data-scroll  href="#seccionClientes">Nuestros Clientes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " data-scroll  href="#seccionPrecios">Precios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " data-scroll  href="#seccionEmpleados">Nuestro Equipo</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link "  data-scroll href="#seccionPreguntas">Preguntas Frecuentes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " data-scroll  href="#seccionNewsLetter">Mantente Informado</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " data-scroll  href="#seccionContacto">Contacto</a>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+  <!-- Finalizando Nav id="menuPrincipal" -->
   <!-- Main Content -->
   <div class="mainContent" id="mainContent">
-    <!-- Nav -->
-    <nav id="menuPrincipal" class="navbar  navbar-light bg-light">
-      <a class="navbar-brand" href="#">
-        <img src="./Varios/logo.svg" width="30" height="30" class="d-inline-block align-top" alt=""> SOFTBOX
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-        aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#mainContent">Home
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#seccionComoTrabaja">Como Funciona</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#seccionNosotros">Nosotros</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="#seccionCaracteristicas">Caracteristicas</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="#seccionEspecialidades">Especialidades</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="#seccionClientes">Nuestros Clientes</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="#seccionPrecios">Precios</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="#seccionEmpleados">Nuestro Equipo</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="#seccionPreguntas">Preguntas Frecuentes</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="#seccionNewsLetter">Mantente Informado</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="#seccionContacto">Contacto</a>
-          </li>
-        </ul>
-
-      </div>
-    </nav>
-    <!-- Finalizando Nav id="menuPrincipal" -->
 
     <!-- Main Header -->
 
     <main class="container" id="headerPrincipal">
       <div class="row">
         <div class="col-6">
-          <h1 class="my-5">CONSTRUIMOS
-            <strong>SOFTWARE</strong> QUE AYUDA</h1>
+          <h1 class="my-5 wow slideInLeft" data-wow-duration="3s">CONSTRUIMOS
+            <strong class="wow flash" data-wow-delay="1s" data-wow-duration="2s">SOFTWARE</strong> QUE AYUDA</h1>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt aperiam accusantium aliquam tempora sit impedit
             quis unde obcaecati</p>
           <button class="btn btn-outline-success" type="submit">CONTACTANOS</button>
@@ -109,8 +113,8 @@
   <section class="container py-5" id="seccionComoTrabaja">
     <article class="row text-center my-5">
       <div class="col-12">
-        <h2>Como Trabaja SOFTBOX</h2>
-        <div id="decoracion"></div>
+        <h2 class="wow slideInLeft" data-wow-duration="2s">Como Trabaja SOFTBOX</h2>
+        <div class="wow slideInRight" data-wow-duration="1s" data-wow-delay="1s" id="decoracion"></div>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque recusandae nam animi reprehenderit dicta, officia
           consequatur sequi beatae modi accusamus vel consequuntur eligendi.</p>
       </div>
@@ -153,20 +157,16 @@
     <section class="container">
       <article class="row">
         <div class="col col-lg-6">
-          <h2 class="my-5">Que es Softbox</h2>
+          <h2 class="my-5 wow slideInLeft" data-wow-duration="2s">Que es Softbox</h2>
 
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque suscipit nobis ullam, veritatis excepturi maiores
             nemo aliquam, blanditiis dolor quidem autem alias, iste minus fugiat? Obcaecati porro perspiciatis quasi culpa
             in voluptates consequatur at tempora voluptate reiciendis. Vitae facilis omnis incidunt laboriosam vero est quae
             fuga quos ex voluptates qui id culpa, animi iste nemo, amet aliquid velit odit? Nemo, suscipit. Dolore reprehenderit
-            officia beatae saepe, totam a. Magni dolore nemo itaque doloribus quaerat provident corporis quod fuga quas iste
-            sapiente porro veniam, cupiditate obcaecati magnam ipsum distinctio. Laboriosam perspiciatis aspernatur earum
-            facere similique illum iste ipsum fugiat! Quas nostrum itaque voluptatibus? Quod voluptatum sequi repellat amet
-            tenetur tempora, laborum voluptate accusamus modi vel totam laboriosam blanditiis aliquam, vitae at placeat officiis.
-            Fugit?
+            officia beatae saepe, totam a.
           </p>
           <h4 class="my-3">Descubre Nuestros Mejores Servicios</h4>
-          <button class="btn btn-outline-success" type="submit">CONOCELOS ACA</button>
+          <button class="btn btn-outline-success wow bounceIn" type="submit">CONOCELOS ACA</button>
         </div>
 
         <div class="col col-lg-6">
@@ -183,7 +183,7 @@
         <div class="col-3">
         </div>
         <div class="col-9 text-right">
-          <h2 class="my-5">Caracteristicas</h2>
+          <h2 class="my-5 wow slideInRight" data-wow-duration="2s">Caracteristicas</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ea fugiat repudiandae. Blanditiis deserunt tenetur
             fugit commodi aut ex alias asperiores officiis, nihil vitae sunt dolor. Sed recusandae, eligendi cumque ab rerum
             quos ipsum ad quas beatae commodi tempora quae dicta. A, rerum?</p>
@@ -217,8 +217,8 @@
   <section class="container py-5" id="seccionEspecialidades">
     <article class="row text-center my-5">
       <div class="col-12">
-        <h2 class="">Como Trabaja</h2>
-        <div id="decoracion"></div>
+        <h2 class="wow slideInLeft" data-wow-duration="2s">Como Trabaja</h2>
+        <div class="wow slideInRight" data-wow-duration="1s" data-wow-delay="1s" id="decoracion"></div>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque recusandae nam animi reprehenderit dicta, officia
           consequatur sequi beatae modi accusamus vel consequuntur eligendi.</p>
       </div>
@@ -291,9 +291,10 @@
       </div>
       <div class="col col-md-6 col-lg-3">
         <div class="card">
-          <img class="card-img-top img-fluid" src="./img/SVG/imgEspecialidades7.svg" alt="Card image cap">
+          <img class="card-img-top img-fluid wow jackInTheBox " data-wow-duration="2s" data-wow-iteration="5 " src="./img/SVG/imgEspecialidades7.svg"
+            alt="Card image cap">
           <div class="card-body">
-            <h4 class="card-title">Animaciones</h4>
+            <h4 class="card-title ">Animaciones</h4>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           </div>
         </div>
@@ -312,7 +313,7 @@
               <i class="fa fa-folder-o fa-3x" aria-hidden="true"></i>
             </div>
             <h4 class="my-3">Descargas de Apps</h4>
-            <p>1540</p>
+            <p class="wow zoomInDown" data-wow-duration="2s">1540</p>
           </div>
         </div>
         <div class="col-12 col-sm-6 col-lg-3">
@@ -321,7 +322,7 @@
               <i class="fa fa-thumbs-o-up fa-3x" aria-hidden="true"></i>
             </div>
             <h4 class="my-3">Clientes Felices</h4>
-            <p>2530</p>
+            <p class="wow zoomInDown" data-wow-duration="2s" data-wow-delay="0.5s">2530</p>
           </div>
         </div>
         <div class="col-12 col-sm-6 col-lg-3">
@@ -330,7 +331,7 @@
               <i class="fa fa-user-circle-o fa-3x" aria-hidden="true"></i>
             </div>
             <h4 class="my-3">Cuentas Activas</h4>
-            <p>8120</p>
+            <p class="wow zoomInUp" data-wow-duration="2s" data-wow-delay="0.7s">8120</p>
           </div>
         </div>
         <div class="col-12 col-sm-6 col-lg-3">
@@ -339,7 +340,7 @@
               <i class="fa fa-star fa-3x" aria-hidden="true"></i>
             </div>
             <h4 class="my-3">Rating de las Apps</h4>
-            <p>1620</p>
+            <p class="wow zoomInUp" data-wow-duration="2s" data-wow-delay="1s">1620</p>
           </div>
         </div>
       </article>
@@ -353,7 +354,7 @@
             libero! Voluptatum placeat ea magni nisi, animi optio odit aperiam natus inventore delectus esse perferendis?
             Voluptate quae ea non molestiae, unde similique nisi nemo, laborum minima iure, debitis laboriosam placeat quidem.
             Laudantium temporibus dolore reiciendis soluta ex quas quibusdam quaerat.</p>
-          <button class="btn btn-outline-success my-3" type="submit">CONTACTANOS</button>
+          <button class="btn btn-outline-success my-3 wow bounceIn" type="submit">CONTACTANOS</button>
         </div>
         <div class=" col-lg-12">
           <img src="" alt="">
@@ -362,8 +363,8 @@
       <!-- id="seccionClientesSecundario" -->
       <article class="row my-5 text-center" id="seccionClientesTestimonios">
         <div class="col-12 my-5">
-          <h2>Nuestros Clientes la Aman</h2>
-          <div id="decoracion"></div>
+          <h2 class="wow slideInLeft" data-wow-duration="2s">Nuestros Clientes la Aman</h2>
+          <div class="wow slideInRight" data-wow-delay="1s" id="decoracion"></div>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque recusandae nam animi reprehenderit dicta, officia
             consequatur sequi beatae modi accusamus vel consequuntur eligendi.</p>
         </div>
@@ -413,8 +414,8 @@
     <section class="container">
       <article class="row text-center my-5">
         <div class="col-12">
-          <h2>Los mejores Precios del Mercado</h2>
-          <div id="decoracion"></div>
+          <h2 class="wow slideInLeft" data-wow-duration="2s">Los mejores Precios del Mercado</h2>
+          <div class="wow slideInRight" data-wow-delay="1s" id="decoracion"></div>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque recusandae nam animi reprehenderit dicta, officia
             consequatur sequi beatae modi accusamus vel consequuntur eligendi.</p>
         </div>
@@ -424,11 +425,11 @@
           <div class="card">
             <img src="./img/imgPrecios.png" alt="" class="img-fluid">
             <div class="precios">
-              <h2>
+              <h2 class="wow rollIn">
                 <sup>$</sup>19.000
                 <sup>/MONTH</sup>
               </h2>
-              <h4>BASICO</h4>
+              <h4 class="wow zoomInLeft" data-wow-delay='1s'>BASICO</h4>
             </div>
 
             <div class="card-body">
@@ -453,11 +454,11 @@
           <div class="card">
             <img src="./img/imgPrecios.png" alt="" class="img-fluid">
             <div class="precios">
-              <h2>
+              <h2 class="wow rollIn">
                 <sup>$</sup>29.000
                 <sup>/MONTH</sup>
               </h2>
-              <h4>PYMES</h4>
+              <h4 class="wow zoomInLeft" data-wow-delay='1s'>PYMES</h4>
             </div>
 
             <div class="card-body">
@@ -483,11 +484,11 @@
           <div class="card">
             <img src="./img/imgPrecios.png" alt="" class="img-fluid">
             <div class="precios">
-              <h2>
+              <h2 class="wow rollIn">
                 <sup>$</sup>39.000
                 <sup>/MONTH</sup>
               </h2>
-              <h4>EMPRESAS</h4>
+              <h4 class="wow zoomInLeft" data-wow-delay='1s'>EMPRESAS</h4>
             </div>
             <div class="card-body">
               <ul>
@@ -512,8 +513,8 @@
   <section class="container py-5" id="seccionEmpleados">
     <article class="row text-center my-5">
       <div class="col-12">
-        <h2>Conoce el Equipo</h2>
-        <div id="decoracion"></div>
+        <h2 class="wow slideInLeft" data-wow-duration="2s">Conoce el Equipo</h2>
+        <div class="wow slideInRight" data-wow-delay="1s" id="decoracion"></div>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque recusandae nam animi reprehenderit dicta, officia
           consequatur sequi beatae modi accusamus vel consequuntur eligendi.</p>
       </div>
@@ -564,13 +565,13 @@
     <section class="container">
       <article class="row text-center my-5">
         <div class="col-12">
-          <h2>Preguntas Frecuentes</h2>
-          <div id="decoracion"></div>
+          <h2 class="wow slideInLeft" data-wow-duration="2s">Preguntas Frecuentes</h2>
+          <div class="wow slideInRight" data-wow-delay="1s" id="decoracion"></div>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque recusandae nam animi reprehenderit dicta, officia
             consequatur sequi beatae modi accusamus vel consequuntur eligendi.</p>
         </div>
       </article>
-      <article class="row">
+      <article class="row ">
         <div class="col-12 col-lg-6">
         </div>
         <div class="col-12 col-lg-6">
@@ -645,13 +646,13 @@
   <section class="container-fluid py-5" id="seccionNewsLetter">
     <article class="row text-center ">
       <div class="col-12 col-md-8 offset-md-2 col-xl-12 offset-lg-0">
-        <h2 class="display-1">Suscribete a nuestro NewsLetter</h2>
+        <h2 class="display-1 wow flash" data-wow-duration="5s" data-wow-iteration="3">Suscribete a nuestro NewsLetter</h2>
         <form class="form-inline my-5">
           <div class="form-group mx-sm-3 ">
             <label for="inputemail " class="sr-only ">Email</label>
             <input type="email " class="form-control form-control-lg" id="inputemail " placeholder="nombre@example.com ">
           </div>
-          <button type="submit " class="btn btn-primary ">Suscribirse</button>
+          <button type="submit" class="btn btn-primary">Suscribirse</button>
         </form>
         <small id="emailHelp" class="form-text">* No compartimos sus datos con terceros.</small>
       </div>
@@ -661,13 +662,16 @@
 
 
   <!-- seccion contacto -->
-  <main class="container-fluid py-5" id="seccionContacto">
+  <main class="container-fluid py-5" id="seccionContacto ">
     <section class="container">
       <article class="row">
-        <div class="col-11 offset-col-1 col-md-4 offset-md-6 offset-lg-8 ">
-          <h4 class="my-5 text-center">Permanece en Contacto</h4>
-          <div id="decoracion"></div>
-
+        <div class="col-12 col-md-6">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15904.320602492926!2d-74.0596825288208!3d4.7560915414846745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sco!4v1512157284948"
+            width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <div class="col-12 col-md-6">
+          <h4 class="my-5 text-center wow slideInLeft" data-wow-duration="2s">Permanece en Contacto</h4>
+          <div class="wow slideInRight" data-wow-delay="1s" id="decoracion"></div>
           <!-- inicia Formulario -->
           <form class="my-5" id="formulario">
             <div class="alert alert-success d-none" id="msgExitoso">Su Email a sido enviado exitosamente, En breve responderemos ...</div>
@@ -707,7 +711,7 @@
             </div>
             <!-- termina mensaje -->
 
-            <button type="submit" class="btn btn-info">Enviar</button>
+            <button type="submit" class="btn btn-info wow bounceIn">Enviar</button>
           </form>
         </div>
       </article>
@@ -715,7 +719,7 @@
   </main>
 
   <!-- Finalizando seccion Caracteristicas id="seccionContacto " -->
-
+  
   <!-- seccion footer -->
   <footer class="container">
     <article class="row">
@@ -762,7 +766,7 @@
     <article class="row text-center my-5">
       <div class="col-12 ">
         <h4>Copyright @2017
-          <a href="# ">SoftBox</a> All Right Reserved</h4>
+          <a class="wow zoomInRight" data-wow-duration="1s" href="#">SoftBox</a> All Right Reserved</h4>
       </div>
     </article>
   </footer>
@@ -780,10 +784,18 @@
     crossorigin="anonymous "></script>
   <script src="js/vendor/smooth-scroll.js "></script>
   <script src="js/vendor/waypoint.js "></script>
+  
+
+  <!-- llamando a woe.js animaciones -->
+  <script src="js/vendor/wow.min.js"></script>
+
+  <!-- llamando a smooth-scroll -->
+  <script src="js/vendor/smooth-scroll.js"></script>
 
   <!-- mis scripts -->
-  <!-- <script src="js/main.js"></script> -->
   <script src="js/formulario.js"></script>
+  <script src="js/main.js"></script>
+
 
 
 </body>
