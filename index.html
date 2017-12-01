@@ -672,15 +672,20 @@
           <form class="my-5" id="formulario">
             <div class="alert alert-success d-none" id="msgExitoso">Su Email a sido enviado exitosamente, En breve responderemos ...</div>
             <div class="alert alert-danger d-none" id="msgError"></div>
+            <!-- inicia nombre -->
             <div class="form-group">
-              <input type="text" class="form-control" name="nombre" id="nombre" aria-describedby="nombreAyuda" required>
+              <input type="text" class="form-control" name="nombre" id="nombre" aria-describedby="nombreAyuda" placeholder="Nombre y Apellido"
+                required>
             </div>
+            <!-- termina nombre -->
+            <!-- inicia email -->
             <div class="form-group">
               <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp
                     " placeholder="tuemail@ejemplo.com" required>
               <small id="emailHelp" class="form-text text-muted ">No compartimos sus datos con terceros.</small>
             </div>
-            <!--
+            <!-- termina email -->
+            <!-- empieza Preferencias -->
             <div class="form-group">
               <label for="gustos">Preferencias</label>
               <select class="form-control" name="gustos" id="gustos" required>
@@ -689,15 +694,19 @@
                 <option>Musica</option>
               </select>
             </div>
+            <!-- termina Preferencias -->
+            <!-- inicia numero -->
             <div class="form-group">
-              <input type="number" step="any" class="form-control" name="telefono" id="telefono" aria-describedby="telefonoAyuda " placeholder="Telefono"
+              <input type="tel" step="any" class="form-control" name="telefono" id="telefono" aria-describedby="telefonoAyuda " placeholder="Telefono"
                 minlength="5" maxlength="12" pattern="[-+]?[0-9]*[.,]?[0-9]+">
             </div>
-             -->
+            <!-- termina numero -->
+            <!-- inicia Mensaje -->
             <div class="form-group">
-              <textarea class="form-control" name="comentario" id="comentario" rows="3" placeholder="Ingrese su Direccion" minlength="10"
-                maxlength="120"></textarea>
+              <textarea class="form-control" name="comentario" id="comentario" rows="3" placeholder="Mensaje" minlength="10" maxlength="120"></textarea>
             </div>
+            <!-- termina mensaje -->
+
             <button type="submit" class="btn btn-info">Enviar</button>
           </form>
         </div>
