@@ -27,6 +27,7 @@ $cuerpo='';
 $enviarA='';
 $asunto='';
 $success ='';
+$gustos="";
 
 //validando el campo nombre
  if(empty($_POST["nombre"])){
@@ -88,11 +89,11 @@ if(empty($_POST['telefono'])){
 // Creando el Email
 
 // creando el cuerpo
-$cuerpo = 'Nombre: '.$nombre.'/n';
-$cuerpo .= 'Email: '.$email.'/n';
-$cuerpo .= 'Preferencias: '.$gustos.'/n';
-$cuerpo .= 'Telefono: '.$telefono.'/n';
-$cuerpo .= 'Mensaje: '.$comentario.'/n';
+$cuerpo = 'Nombre: '.$nombre.'<br>';
+$cuerpo .= 'Email: '.$email.'<br>';
+$cuerpo .= 'Preferencias: '.$gustos.'<br>';
+$cuerpo .= 'Telefono: '.$telefono.'<br>';
+$cuerpo .= 'Mensaje: '.$comentario.'<br>';
 
 // creando el destinatario
 
@@ -108,6 +109,18 @@ $asunto = 'Nuevo Mensaje del Landing Page';
     // va sin datos
      echo $error;
  }
+
+
+ //  conectando Bd Contacto
+ @include_once('conexionMkt.php');
+
+//  INSERT INTO `tbl_contacto` (`id`, `nombre`, `email`, `gustos`, `telefono`, `mensaje`) VALUES (NULL, 'David Salinas', 'dnarino@gmail.com', 'Musica', '3007452187', 'dasfsdafsdafasdfdsafdsafda');
+
+ $sqlContacto = 'INSERT INTO tbl_contacto (id, nombre, email, gustos, telefono, mensaje) VALUES (NULL, :nombre, :email, :gustos, :telefono, :comentario)';
+
+ $preparadoContacto = $conexionMkt -> prepare($sqlContacto);
+
+ $preparadoContacto -> execute(array(':nombre'=> $nombre,':email'=> $email,':gustos'=> $gustos,':telefono'=> $telefono,':comentario'=> $comentario,));
 
 
 ?>

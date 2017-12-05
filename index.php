@@ -28,7 +28,7 @@
 
   <!-- Mis Estilos -->
   <link rel="stylesheet" href="css/main.css">
-  
+
 
   <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
@@ -55,31 +55,31 @@
           <a class="nav-link" data-scroll href="#seccionComoTrabaja">Como Funciona</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link"  data-scroll  href="#seccionNosotros">Nosotros</a>
+          <a class="nav-link" data-scroll href="#seccionNosotros">Nosotros</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link " data-scroll  href="#seccionCaracteristicas">Caracteristicas</a>
+          <a class="nav-link " data-scroll href="#seccionCaracteristicas">Caracteristicas</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link " data-scroll  href="#seccionEspecialidades">Especialidades</a>
+          <a class="nav-link " data-scroll href="#seccionEspecialidades">Especialidades</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link " data-scroll  href="#seccionClientes">Nuestros Clientes</a>
+          <a class="nav-link " data-scroll href="#seccionClientes">Nuestros Clientes</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link " data-scroll  href="#seccionPrecios">Precios</a>
+          <a class="nav-link " data-scroll href="#seccionPrecios">Precios</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link " data-scroll  href="#seccionEmpleados">Nuestro Equipo</a>
+          <a class="nav-link " data-scroll href="#seccionEmpleados">Nuestro Equipo</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link "  data-scroll href="#seccionPreguntas">Preguntas Frecuentes</a>
+          <a class="nav-link " data-scroll href="#seccionPreguntas">Preguntas Frecuentes</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link " data-scroll  href="#seccionNewsLetter">Mantente Informado</a>
+          <a class="nav-link " data-scroll href="#seccionNewsLetter">Mantente Informado</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link " data-scroll  href="#seccionContacto">Contacto</a>
+          <a class="nav-link " data-scroll href="#seccionContacto">Contacto</a>
         </li>
       </ul>
 
@@ -95,7 +95,7 @@
       <div class="row">
         <div class="col-6">
           <h1 class="my-5 wow slideInLeft" data-wow-duration="3s">CONSTRUIMOS
-            <strong class="wow flash" data-wow-delay="1s" data-wow-duration="2s">SOFTWARE</strong> QUE AYUDA</h1>
+            <strong class="wow flash" data-wow-delay="2.5s" data-wow-duration="2s">SOFTWARE</strong> QUE AYUDA</h1>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt aperiam accusantium aliquam tempora sit impedit
             quis unde obcaecati</p>
           <button class="btn btn-outline-success" type="submit">CONTACTANOS</button>
@@ -237,7 +237,7 @@
         <div class="card">
           <img class="card-img-top img-fluid" src="./img/SVG/imgEspecialidades2.svg" alt="Card image cap">
           <div class="card-body">
-            <h4 class="card-title">Esquema de Colores</h4>
+            <h4 class="card-title">Esquema y Colores</h4>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           </div>
         </div>
@@ -644,17 +644,27 @@
 
   <!-- seccion NewsLetter -->
   <section class="container-fluid py-5" id="seccionNewsLetter">
-    <article class="row text-center ">
-      <div class="col-12 col-md-8 offset-md-2 col-xl-12 offset-lg-0">
-        <h2 class="display-1 wow flash" data-wow-duration="5s" data-wow-iteration="3">Suscribete a nuestro NewsLetter</h2>
-        <form class="form-inline my-5">
-          <div class="form-group mx-sm-3 ">
-            <label for="inputemail " class="sr-only ">Email</label>
-            <input type="email " class="form-control form-control-lg" id="inputemail " placeholder="nombre@example.com ">
+    <article class="row text-center">
+      <div class="col-12">
+        <h2 class="display-1 wow flash" data-wow-duration="5s" data-wow-iteration="5">Suscribete a nuestro NewsLetter</h2>
+      </div>
+      <div class="col-12">
+        <!-- inicio formulario Marketing -->
+        <form class="form-inline my-5" id="frmMarketing">
+          <div class="form-group mx-3">
+            <input type="email" class="form-control form-control-lg" id="mktEmail" name="mktEmail" placeholder="nombre@ejemplo.com">
           </div>
           <button type="submit" class="btn btn-primary">Suscribirse</button>
         </form>
+        <!-- Fin formulario Marketing -->
         <small id="emailHelp" class="form-text">* No compartimos sus datos con terceros.</small>
+        <div class="row my-5">
+          <div class="col-8 offset-2">
+<div class="alert alert-success d-none" id="msgMktExitoso">Se ha inscrito Correctamente ...</div>
+        <div class="alert alert-danger d-none" id="msgMktError"></div>
+          </div>
+        </div>
+        
       </div>
     </article>
   </section>
@@ -662,7 +672,7 @@
 
 
   <!-- seccion contacto -->
-  <main class="container-fluid py-5" id="seccionContacto ">
+  <main class="container-fluid py-5" id="seccionContacto">
     <section class="container">
       <article class="row">
         <div class="col-12 col-md-6">
@@ -713,7 +723,7 @@
             <div class="container my-3" id="miCaptcha">
               <div class="row">
                 <div class="col">
-                    <?php
+                  <?php
           require_once('php/recaptchalib.php');
           $publickey = "6LeRUzsUAAAAAP5p5moT3DY0OUP0kqIgJDu2jRTV"; // you got this from the signup page
           echo recaptcha_get_html($publickey);
@@ -730,7 +740,7 @@
   </main>
 
   <!-- Finalizando seccion Caracteristicas id="seccionContacto " -->
-  
+
   <!-- seccion footer -->
   <footer class="container">
     <article class="row">
@@ -763,21 +773,20 @@
       <div class="col-12 col-md-6 col-lg-3" id="redesSociales">
         <ul>
           <li>
-            <i class="fa fa-twitter " aria-hidden="true "></i>
+            <a href="https://twitter.com/dnarinob" ><i class="fa fa-twitter " aria-hidden="true "></i></a>
           </li>
           <li>
-            <i class="fa fa-facebook " aria-hidden="true "></i>
+            <a href="https://www.facebook.com/narino.david"><i class="fa fa-facebook " aria-hidden="true "></i></a>
           </li>
           <li>
-            <i class="fa fa-google " aria-hidden="true "></i>
+            <a href="mailto:dnarino@gmail.com?Subject=Landing%20miapplicacion.com"><i class="fa fa-google" aria-hidden="true "></i></a>
           </li>
         </ul>
       </div>
     </article>
     <article class="row text-center my-5">
-      <div class="col-12 ">
-        <h4>Copyright @2017
-          <a class="wow zoomInRight" data-wow-duration="1s" href="#">SoftBox</a> All Right Reserved</h4>
+      <div class="col-12">
+        <h6>Copyright @2017 Desarrollado por <a class="wow zoomInRight" data-wow-duration="1s" href="mailto:dnarino@gmail.com?Subject=Landing%20miapplicacion.com">David Nariño </a> All Right Reserved</h6>
       </div>
     </article>
   </footer>
@@ -795,7 +804,7 @@
     crossorigin="anonymous "></script>
   <script src="js/vendor/smooth-scroll.js "></script>
   <script src="js/vendor/waypoint.js "></script>
-  
+
 
   <!-- llamando a woe.js animaciones -->
   <script src="js/vendor/wow.min.js"></script>
@@ -804,7 +813,12 @@
   <script src="js/vendor/smooth-scroll.js"></script>
 
   <!-- mis scripts -->
+
+  <!-- formulario Marketing -->
+  <script src="js/frmMarketing.js"></script>
+  <!-- formulario contacto -->
   <script src="js/formulario.js"></script>
+
   <script src="js/main.js"></script>
 
 

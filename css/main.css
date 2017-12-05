@@ -23,7 +23,8 @@ ul li {
     z-index: 2; }
 
   #mainContent {
-    z-index: -1;
+    position: relative;
+    overflow: hidden;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -34,9 +35,8 @@ ul li {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    background: url("../img/mainHeader.png") no-repeat center center fixed;
-    background-size: cover;
-    height: 100vh; }
+    height: 100vh;
+    z-index: 1; }
     #mainContent #headerPrincipal h1 {
       font-family: 'Nunito', sans-serif;
       font-weight: 400;
@@ -56,7 +56,38 @@ ul li {
       background-color: whitesmoke;
       border: solid 1px white;
       color: #333333; }
-
+    #mainContent #headerPrincipal:before {
+      background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0)), to(rgba(7, 64, 187, 0.6))), url("../img/mainHeader.png") no-repeat center center;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(7, 64, 187, 0.6)), url("../img/mainHeader.png") no-repeat center center;
+      background-size: cover;
+      opacity: 0;
+      content: "";
+      position: absolute;
+      left: 0%;
+      right: -5%;
+      top: -10%;
+      bottom: 0;
+      z-index: -1;
+      -webkit-animation: fade-slide-down 2s 0.5s cubic-bezier(0, 0.5, 0, 1) forwards;
+              animation: fade-slide-down 2s 0.5s cubic-bezier(0, 0.5, 0, 1) forwards; }
+  @-webkit-keyframes fade-slide-down {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(-4rem);
+              transform: translateY(-4rem); }
+    100% {
+      opacity: 1;
+      -webkit-transform: none;
+              transform: none; } }
+  @keyframes fade-slide-down {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(-4rem);
+              transform: translateY(-4rem); }
+    100% {
+      opacity: 1;
+      -webkit-transform: none;
+              transform: none; } }
   #seccionComoTrabaja article .col-12 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -150,6 +181,10 @@ ul li {
       margin: 1rem 0rem; }
 
   #seccionClientes {
+    overflow: hidden;
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#5ccaf4+0,2989d8+27,207cca+82,4ac4f3+100 */
     background: #5ccaf4;
     /* Old browsers */
@@ -255,6 +290,32 @@ ul li {
         letter-spacing: 0rem;
         line-height: 1.5rem;
         color: #333333; }
+
+  #seccionClientes:before {
+    background: white;
+    content: "";
+    height: 10rem;
+    left: -5%;
+    position: absolute;
+    right: -5%;
+    top: -2%;
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+    -webkit-transform: rotateZ(-4deg);
+            transform: rotateZ(-4deg); }
+
+  #seccionClientes:after {
+    background: white;
+    content: "";
+    height: 40rem;
+    left: -5%;
+    position: absolute;
+    right: -5%;
+    top: 95%;
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+    -webkit-transform: rotateZ(-4deg);
+            transform: rotateZ(-4deg); }
 
   #seccionPrecios article:nth-child(1) h2 {
     font-family: 'Nunito', sans-serif;
@@ -382,6 +443,12 @@ ul li {
         line-height: 1.5rem; }
 
   #seccionNewsLetter {
+    position: relative;
+    overflow: hidden;
+    -webkit-perspective: 100px;
+            perspective: 100px;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -412,6 +479,10 @@ ul li {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center; }
+      #seccionNewsLetter form .form-group {
+        width: 50%; }
+        #seccionNewsLetter form .form-group input {
+          width: 100%; }
       #seccionNewsLetter form button {
         background-color: whitesmoke;
         border: solid 1px white;
@@ -422,6 +493,19 @@ ul li {
       font-size: 0.875rem;
       line-height: 1.375rem;
       color: whitesmoke; }
+
+  #seccionNewsLetter:after {
+    position: absolute;
+    height: 20rem;
+    background: white;
+    content: "";
+    left: -1%;
+    right: -1%;
+    top: 85%;
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+    -webkit-transform: rotateZ(4deg);
+            transform: rotateZ(4deg); }
 
   footer .row div {
     display: -webkit-box;

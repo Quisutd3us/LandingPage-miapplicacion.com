@@ -5,7 +5,7 @@
 $azul1: #5ccaf4;
 $azul2: #4ac4f3;
 $negro: #333333;
-$grisIconos: #f4f4f4;
+$grisIconos: rgba(244, 244, 244, 1);
 // definiendo mixins
 @mixin h1xs($tamano) {
     font-family: 'Nunito', sans-serif;
@@ -76,16 +76,16 @@ ul li {
 @media (min-width: 320px) {
     #menuPrincipal {
         z-index: 2;
-    }
+    } // terminando estilos MenuPrincipal
     #mainContent {
         // @include helper(red);
-        z-index: -1;
+        position: relative;
+        overflow: hidden;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        background: url("../img/mainHeader.png") no-repeat center center fixed;
-        background-size: cover;
         height: 100vh;
+        z-index: 1;
         #headerPrincipal {
             // @include helper(red);
             h1 {
@@ -100,6 +100,29 @@ ul li {
                 background-color: whitesmoke;
                 border: solid 1px white;
                 color: $negro;
+            }
+        }
+        #headerPrincipal:before {
+            background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(7, 64, 187, 0.6)), url("../img/mainHeader.png") no-repeat center center;
+            background-size: cover;
+            opacity: 0;
+            content: "";
+            position: absolute;
+            left: 0%;
+            right: -5%;
+            top: -10%;
+            bottom: 0;
+            z-index: -1;
+            animation: fade-slide-down 2s .5s cubic-bezier(0, 0.5, 0, 1) forwards;
+        } // anumaciones
+        @keyframes fade-slide-down {
+            0% {
+                opacity: 0;
+                transform: translateY(-4rem);
+            }
+            100% {
+                opacity: 1;
+                transform: none;
             }
         }
     } // terminando estilos Maincontent
@@ -171,7 +194,9 @@ ul li {
         }
     } // terminando estilos Especialidades
     #seccionClientes {
-        // @include helper(red);
+        overflow: hidden;
+        position: relative;
+        transform-style: preserve-3d; // @include helper(red);
         /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#5ccaf4+0,2989d8+27,207cca+82,4ac4f3+100 */
         background: #5ccaf4;
         /* Old browsers */
@@ -258,6 +283,28 @@ ul li {
                 }
             }
         }
+    }
+    #seccionClientes:before {
+        background: white;
+        content: "";
+        height: 10rem;
+        left: -5%;
+        position: absolute;
+        right: -5%;
+        top: -2%;
+        transform-origin: 0 0;
+        transform: rotateZ(-4deg);
+    }
+    #seccionClientes:after {
+        background: white;
+        content: "";
+        height: 40rem;
+        left: -5%;
+        position: absolute;
+        right: -5%;
+        top: 95%;
+        transform-origin: 0 0;
+        transform: rotateZ(-4deg);
     } // terminando estilos Clientes
     #seccionPrecios {
         // @include helper(red);
@@ -372,6 +419,10 @@ ul li {
     } // terminando estilos Preguntas
     #seccionNewsLetter {
         // @include helper(red);
+        position: relative;
+        overflow: hidden;
+        perspective: 100px;
+        transform-style: preserve-3d;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -388,6 +439,12 @@ ul li {
             // @include helper(red);
             display: flex;
             justify-content: center;
+            .form-group {
+                width: 50%;
+                input {
+                    width: 100%;
+                }
+            }
             button {
                 background-color: whitesmoke;
                 border: solid 1px white;
@@ -398,6 +455,17 @@ ul li {
             @include h4xs();
             color: whitesmoke;
         }
+    }
+    #seccionNewsLetter:after {
+        position: absolute;
+        height: 20rem;
+        background: white;
+        content: "";
+        left: -1%;
+        right: -1%;
+        top: 85%;
+        transform-origin: 0 0;
+        transform: rotateZ(4deg);
     } // terminando estilos Newsletter
     footer {
         // @include helper(red);

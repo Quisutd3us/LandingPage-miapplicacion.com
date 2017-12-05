@@ -1,0 +1,20 @@
+ftp.paginaswebcolombia.net	
+/home/u870474563/public_html/	
+u870474563.dnarino
+Lhq9BCgXmoAX
+
+bases de datas:
+
+Formulario:
+base de datos nombre:u870474563_00001
+usuario:u870474563_user1
+contraseña:lklzqya69CMW
+
+https://auth-db63.hostinger.co/
+
+miapplicacion.com
+
+bd nombre:u870474563_00002
+usuario:u870474563_user2
+clave:ge3m6vSSOBj6
+hosting:mysql.hostinger.co
